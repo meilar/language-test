@@ -1,3 +1,7 @@
+.answer {
+  display: none;
+}
+
 /* Header styling */
 .header h1 {
   text-align: center;
@@ -7,4 +11,17 @@
 #deadfish-goodbye {
   word-break: break-all;
   hyphens: auto;
+}
+
+.intro img {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+
+.btn-box {
+  margin-left:auto;
+  margin-right:auto;
+  text-align: center;
 }
