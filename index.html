@@ -24,7 +24,7 @@
         <button id="btn-go" class="btn btn-primary">Let's get started!</button>
       </div>
     </div>
-    <div class="questions">
+    <div class="hidden-start questions">
       <h2>Programming Language Assessment</h2>
       <img src="https://www.loremflickr.com/600/150/test" alt="image of a test">
       <div id="q1" class="question">
@@ -77,16 +77,17 @@
           <option value="3" label="Very excited"></option>
         </datalist>
       </div>
+      <button id="btn-submit" class="btn btn-danger">See your results</button>
     </div>
     <div class="results">
-      <div class="answer" id="ans-1">
+      <div class="hidden-start answer" id="ans-1">
         <h3>Congratulations, <span></span>! You are now an <span class="lang-name">Airline Food </span> programmer!</h3>
         <p>This programming language was designed to create programs that sound like Jerry Seinfeld's standup routine as captured in the hit TV show <em>Seinfeld</em>.</p>
         <p>For example, to create a variable called <em>x</em>, include the code <code>You ever notice [x]?</code></p>
         <p><a href="https://esolangs.org/wiki/Airline_Food">Learn more about Airline Food.</a></p>
         <p><strong>What they'll say at your retirement party: </strong> <span class="user-name"></span>, working with you has been... yadda, yadda, yadda.</p>
       </div>
-      <div class="answer" id="ans-2">
+      <div class="hidden-start answer" id="ans-2">
         <h3>Congratulations, <span></span>! You are now a <span class="lang-name">LOLCODE</span> programmer!</h3>
         <p>This programming language was modeled on the mangled and borderline funny speech included with LOLCAT memes.</p>
         <p>For example, a "hello world" program looks like this:
@@ -98,13 +99,13 @@
         <p><a href="https://en.wikipedia.org/wiki/LOLCODE">Learn more about LOLCODE.</a></p>
         <p><strong>What they'll say at your retirement party: </strong> <span class="user-name"></span>? More like work bestie! Did I just say that out loud? Sooo... that just happened. Too soon? I think we're done here. Good talk!</p>
       </div>
-      <div class="answer" id="ans-3">
+      <div class="hidden-start answer" id="ans-3">
         <h3>Congratulations, <span></span>! You are now a <span class="lang-name">Deadfish</span> programmer!</h3>
         <p>Look, I don't know what to tell you. Not everyone is cut out to memorize long lists of functions and methods. Some people yearn for a simpler way. Deadfish was designed to use a single memory cell and only has four functions: <code>i, d, s, o</code>.</p>
         <p><a href="https://www.dcode.fr/deadfish-language">Learn more about Deadfish.</a></p>
         <p id="deadfish-goodbye"><strong>What they'll say at your retirement party: </strong>iisiiiisiiiiiiiiiiiiiiiiiiiiiiioiiiiiiiiiiiiiioddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddoiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiooddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddoiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiioddddoiiiiiiiiiioodddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddoiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiioddddddddddoiiiiiio</p> 
       </div>
-      <button id="btn-reset" class="btn btn-dark">Try again</button>
+      <button id="btn-reset" class="hidden-start btn btn-dark">Start Over</button>
     </div>
       
   </div>

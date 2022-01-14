@@ -1,10 +1,6 @@
-/* .answer {
-  display: none;
-} */
-
-/* .questions {
-  display: none;
-} */
+.hidden-start {
+  display:none;
+}
 
 /* Header styling */
 .header h1 {
