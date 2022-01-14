@@ -45,3 +45,29 @@
 .question {
   margin-bottom: 10%;
 }
+
+
+input[type="range"] {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+datalist {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: -10px;
+  padding-top: 0px;
+}
+option {
+  width: 2ex;
+  display: flex;
+  justify-content: center;
+  height: 42px;
+  align-items: end;
+  background-image: url(tick.png);
+  height: 4ex;
+  background-position-y: -15px;
+  background-position-x: center;
+  z-index: -1;
+}

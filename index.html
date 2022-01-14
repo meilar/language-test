@@ -53,10 +53,29 @@
         <input type="color" value="#ff0000" id="q4-color">
       </div>
       <div id="q5" class="question">
-
+        <h3>When you get angry, which phrase are you most likely to repeat to yourself?</h3>
+        <div>
+          <input type="radio" id="q5-society" name="q5-radio" value="1"
+                 checked>
+          <label for="q5-society">We live in a society!</label>
+        </div>
+        <div>
+          <input type="radio" id="q5-lol" name="q5-radio" value="2">
+          <label for="q5-lol">This is Sparta!</label>
+        </div>
+        <div>
+          <input type="radio" id="q5-dead" name="q5-radio" value="3">
+          <label for="q5-dead">Whereof one cannot speak, thereof one must be silent.</label>
+        </div>
       </div>
       <div id="q6" class="question">
-
+        <h3>How excited are you to begin your new career?</h3>
+        <input type="range" list="positions" id="q6-range" name="q6-range" min="1" max="3">
+        <datalist id="positions">
+          <option value="1" label="Not excited"></option>
+          <option value="2" label="Somewhat excited"></option>
+          <option value="3" label="Very excited"></option>
+        </datalist>
       </div>
     </div>
     <div class="results">
