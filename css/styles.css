@@ -1,10 +1,10 @@
-.answer {
+/* .answer {
   display: none;
-}
+} */
 
-.questions {
+/* .questions {
   display: none;
-}
+} */
 
 /* Header styling */
 .header h1 {
@@ -28,4 +28,20 @@
   margin-left:auto;
   margin-right:auto;
   text-align: center;
+}
+
+.questions img{
+  display: flex;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 10px;
+}
+
+.questions h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.question {
+  margin-bottom: 10%;
 }
