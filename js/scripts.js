@@ -1,18 +1,5 @@
 $(document).ready(function() {
   
-  // Business Logic
-  
-  let userScore = 0;
-  
-  function userCalc() {
-    let q2Score = $("select#select-lunch").val();
-    alert(q2Score);
-    let userScore = userScore + parseInt(q2Score);
-    alert("new userscore is " + userScore);
-  }
-
-  // UI Logic 
-
   $("button#btn-go").click(function() {
     $("div.intro").hide();
     $("div.questions").show();
@@ -23,16 +10,14 @@ $(document).ready(function() {
     $("div.questions").toggle();
     $("div.waiting").show();
     
-    
-    
     setTimeout(function() {
       $("div.waiting").toggle();
 
-      userCalc();
+    const lunch = parseInt($("#select-lunch").val());  
 
-      if (($.parseInt("select#select-lunch")) >= 5) {
+      if (lunch === 3) {
         $("div#ans-3").show();
-      } else if (userScore === 4 || userScore === 5) {
+      } else if (lunch === 2) {
         $("div#ans-2").show();  
       } else {
         $("div#ans-1").show();
