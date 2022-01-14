@@ -15,17 +15,23 @@ $(document).ready(function() {
 
     const lunch = parseInt($("#select-lunch").val());  
 
-      if (lunch === 3) {
-        $("div#ans-3").show();
-      } else if (lunch === 2) {
-        $("div#ans-2").show();  
-      } else {
-        $("div#ans-1").show();
-      }
+    if (lunch === 3) {
+      $("div#ans-3").show();
+    } else if (lunch === 2) {
+      $("div#ans-2").show();  
+    } else {
+      $("div#ans-1").show();
+    }
+  
+    const userColor = $("#q4-color").val();
 
-      $("button#btn-reset").show();
+    $(".lang-name").css("color", userColor);
+      
 
-      $("span.user-name").text($("input#form-name").val());
+
+    $("button#btn-reset").show();
+
+    $("span.user-name").text($("input#form-name").val());
 
     }, 3000);
 
