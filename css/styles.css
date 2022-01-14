@@ -3,3 +3,8 @@
   text-align: center;
   margin-bottom: 10%;
 }
+
+#deadfish-goodbye {
+  word-break: break-all;
+  hyphens: auto;
+}
