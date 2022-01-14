@@ -2,6 +2,10 @@
   display: none;
 }
 
+.questions {
+  display: none;
+}
+
 /* Header styling */
 .header h1 {
   text-align: center;
