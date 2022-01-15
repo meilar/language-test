@@ -1,8 +1,9 @@
 /* Global/special styles */
-/* 
+
+
 .hidden-start {
   display:none;
-} */
+}
 
 #deadfish-goodbye {
   word-break: break-all;
@@ -35,10 +36,9 @@ body {
 /* intro styling */
 
 .intro img {
+  max-width: 50%;
   float: left;
-  margin-right: 15px;
-  margin-bottom: 15px;
-  border-radius: 50%;
+  margin-right: 2%;
 }
 
 .intro p {
