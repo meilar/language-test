@@ -1,8 +1,8 @@
 /* Global/special styles */
-
+/* 
 .hidden-start {
   display:none;
-}
+} */
 
 #deadfish-goodbye {
   word-break: break-all;
@@ -13,6 +13,9 @@ body {
   background-image: url(../img/y-so-serious-white.png);
 }
 
+.container {
+  margin-bottom: 5%;
+}
 
 /* Header styling */
 
