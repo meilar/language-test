@@ -1,17 +1,35 @@
+/* Global/special styles */
+
 .hidden-start {
   display:none;
-}
-
-/* Header styling */
-.header h1 {
-  text-align: center;
-  margin-bottom: 10%;
 }
 
 #deadfish-goodbye {
   word-break: break-all;
   hyphens: auto;
 }
+
+body {
+  background-image: url(../img/y-so-serious-white.png);
+}
+
+
+/* Header styling */
+
+.header h1 {
+  text-align: center;
+  padding: 5%
+}
+
+.header {
+  margin-top: 5%;
+  margin-bottom:5%;
+  border: whitesmoke groove 4px;
+  background-image: url(../img/y-so-serious.png);
+  color:white;
+}
+
+/* intro styling */
 
 .intro img {
   float: left;
@@ -20,9 +38,19 @@
   border-radius: 50%;
 }
 
+.intro p {
+  font-size: larger;
+}
+
+.intro button {
+  margin-top: 10px;
+}
+
 .btn-box {
+  display: block;
   margin-left:auto;
   margin-right:auto;
+  margin-top: 10px;
   text-align: center;
 }
 
