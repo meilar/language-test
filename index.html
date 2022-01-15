@@ -12,10 +12,10 @@
 </head>
 <body>
   <div class="container">
-    <div class="header">
+    <div class="header col-md-6 offset-md-3">
       <h1>Let's help you find a programming language!</h1>
     </div>
-    <div class="intro">
+    <div class="intro col-md-6 offset-md-3">
       <img src="http://www.loremflickr.com/200/200/woman" alt="image of a woman">
       <p>Hi there! I am Morgan Ghufran and over the course of my career I have spent <em>over 10 weeks and hundreds of hours</em> helping talented, motivated candidates like you embrace the grind and manifest the future you want for yourself.</p>
       <p>I have a simple assessment quiz to help me understand your goals and match you with a programming language that suits your individual gifts.</p>
@@ -25,61 +25,63 @@
       </div>
     </div>
     <div class="hidden-start questions">
-      <h2>Programming Language Assessment</h2>
-      <img src="https://www.loremflickr.com/600/150/test" alt="image of a test">
-      <div id="q1" class="question">
-        <h3>What is your first name?</h3>
-        <div class="form-group">
-          <input type="text" class="form-control" id="form-name" placeholder="Enter your first name">
+      <div class="col-md-6 offset-md-3">
+        <img src="https://www.loremflickr.com/600/150/test" alt="image of a test">
+        <div id="q1" class="question">
+          <h3>What is your first name?</h3>
+          <div class="form-group">
+            <input type="text" class="form-control" id="form-name" placeholder="Enter your first name">
+          </div>
+        </div>
+        <div id="q2" class="question">
+          <h3>What would you like to eat for lunch today?</h3>
+            <select id="select-lunch" class="form-control">
+              <option value="1">One large crab bisque to go.</option>
+              <option value="2">I can has cheezburger?</option>
+              <option value="3">Oh, that sounds too complicated. Clear broth for me.</option>
+            </select>
+        </div>
+        <div id="q3" class="question">
+          <h3>What was the peak month of American pop culture?</h3>
+            <input type="month" id="peak-year" name="peak-year" min="1950-01" max="2021-01">
+        </div>
+        <div id="q4" class="question">
+          <h3>What color annoys you the most?</h3>
+          <label for="q4-color">Click to choose your own color:</label>
+          <input type="color" value="#ff0000" id="q4-color">
+        </div>
+        <div id="q5" class="question">
+          <h3>When you get angry, which phrase are you most likely to repeat to yourself?</h3>
+          <div>
+            <input type="radio" id="q5-society" name="q5-radio" value="1"
+                   checked>
+            <label for="q5-society">We live in a society!</label>
+          </div>
+          <div>
+            <input type="radio" id="q5-lol" name="q5-radio" value="2">
+            <label for="q5-lol">This is Sparta!</label>
+          </div>
+          <div>
+            <input type="radio" id="q5-dead" name="q5-radio" value="3">
+            <label for="q5-dead">Whereof one cannot speak, thereof one must be silent.</label>
+          </div>
+        </div>
+        <div id="q6" class="question">
+          <h3>How excited are you to begin your new career?</h3>
+          <input type="range" list="positions" id="q6-range" name="q6-range" min="1" max="3">
+          <datalist id="positions">
+            <option value="1" label="Not excited"></option>
+            <option value="2" label="Somewhat excited"></option>
+            <option value="3" label="Very excited"></option>
+          </datalist>
+        </div>
+        <div class="btn-box">
+          <button id="btn-submit" class="btn btn-danger">See your results</button>
         </div>
       </div>
-      <div id="q2" class="question">
-        <h3>What would you like to eat for lunch today?</h3>
-          <select id="select-lunch" class="form-control">
-            <option value="1">One large crab bisque to go.</option>
-            <option value="2">I can has cheezburger?</option>
-            <option value="3">Oh, that sounds too complicated. Clear broth for me.</option>
-          </select>
-      </div>
-      <div id="q3" class="question">
-        <h3>What was the peak month of American pop culture?</h3>
-          <input type="month" id="peak-year" name="peak-year" min="1950-01" max="2021-01">
-      </div>
-      <div id="q4" class="question">
-        <h3>What color annoys you the most?</h3>
-        <label for="q4-color">Click to choose your own color:</label>
-        <input type="color" value="#ff0000" id="q4-color">
-      </div>
-      <div id="q5" class="question">
-        <h3>When you get angry, which phrase are you most likely to repeat to yourself?</h3>
-        <div>
-          <input type="radio" id="q5-society" name="q5-radio" value="1"
-                 checked>
-          <label for="q5-society">We live in a society!</label>
-        </div>
-        <div>
-          <input type="radio" id="q5-lol" name="q5-radio" value="2">
-          <label for="q5-lol">This is Sparta!</label>
-        </div>
-        <div>
-          <input type="radio" id="q5-dead" name="q5-radio" value="3">
-          <label for="q5-dead">Whereof one cannot speak, thereof one must be silent.</label>
-        </div>
-      </div>
-      <div id="q6" class="question">
-        <h3>How excited are you to begin your new career?</h3>
-        <input type="range" list="positions" id="q6-range" name="q6-range" min="1" max="3">
-        <datalist id="positions">
-          <option value="1" label="Not excited"></option>
-          <option value="2" label="Somewhat excited"></option>
-          <option value="3" label="Very excited"></option>
-        </datalist>
-      </div>
-      <div class="btn-box">
-        <button id="btn-submit" class="btn btn-danger">See your results</button>
-      </div>
+      
     </div>
-    <div class="hidden-start waiting">
+    <div class="hidden-start waiting col-md-6 offset-md-3">
       <h2>Please wait while we calculate your results</h2>
       <div class="progress-wheel">
         <div id="floatingBarsG">
@@ -94,7 +96,7 @@
         </div>
       </div>
     </div>
-    <div class="results">
+    <div class="results col-md-6 offset-md-3">
       <div class="hidden-start answer" id="ans-1">
         <h3>Congratulations, <span class="user-name"></span>! You are now an <span class="lang-name">Airline Food </span> programmer!</h3>
         <p>This programming language was designed to create programs that sound like Jerry Seinfeld's standup routine as captured in the hit TV show <em>Seinfeld</em>.</p>
